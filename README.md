@@ -165,7 +165,115 @@ java面向对象学习--  前提：已有基础
                 除了调用属性之外，this也可以实现方法的调用，但是对于方法的调用就必须考虑构造与普通方法。
                         ·构造方法调用 （this()）:使用关键字 new 实例化对象的时候才会调用构造方法；
                         ·普通方法调用（ this.方法名称() ）:实例化对象产生之后就可以调用普通方法。
-                    范例: 
+                    范例: （普通方法调用）
+
+                        public Person (String name,int age){
+                            this.setName(name); //加上this为标准写法
+                            setName(name); //加与不加都表示本类方法 
+                        }
+                    范例: （构造方法调用）  
+                        假设现在类中一共有三个构造方法，但是要求不管调用那个方法，都必须，都执行一句输出语句“一个新的Person类方法”
+
+                    传统做法实现:   
+                        class Person {
+                            private String name ; //个人姓名
+                            private int age ; //年龄
+                            //构造方法重载
+                            public Person(){
+                              System.out.println("*** 一个新的Person类对象实例化了");
+                            }
+                            //构造方法重载
+                            public Person(String name){
+                              System.out.println("*** 一个新的Person类对象实例化了");
+                            }
+                            //构造方法重载
+                            public Person(String name , int age){
+                                
+                              System.out.println("*** 一个新的Person类对象实例化了");
+                            }
+                            public void tell (){
+                                System.out.println("姓名" + name + ",年龄" + age) 
+                            }
+
+                            //以下省略属性的setter与getter方法
+                                ...
+                        }
+
+                        public classs JavaDemo {
+                            public static void main (String args[]){
+                                Person per = new Person("王五",18);
+                                per.tell();
+                            }
+                        }
+
+                    优化后的代码:
+                        class Person {
+                            private String name ; //个人姓名
+                            private int age ; //年龄
+                            //构造方法重载
+                            public Person(){
+                              System.out.println("*** 一个新的Person类对象实例化了");
+                            }
+                            //构造方法重载
+                            public Person(String name){
+                              this(); //调用无参
+                              this.name = name;
+                            }
+                            //构造方法重载
+                            public Person(String name , int age){ 
+                             this.(name)  //调用单参构造方法
+                             this.age = age;
+                            }
+                            public void tell (){
+                                System.out.println("姓名" + name + ",年龄" + age) 
+                            }
+
+                            //以下省略属性的setter与getter方法
+                                ...
+                        }
+
+                对于本类构造方法的互相调用需要注意以下几点重要问题: 
+                        ·构造方法必须在实例化新对象的时候调用 ，所以 this() 语句必须放在构造方法的首行（也就是说 this() 只能也只允许放在构造方法首行）
+
+                        ·构造方法互相调用时请保留程序的出口,别形成死循环;
+                            错误示例:
+                            public Person(){
+                                //出现了死循环
+                                this("name",age);
+                              System.out.println("*** 一个新的Person类对象实例化了");
+                            }
+                            public Person(String name){
+                              this(); //调用无参
+                              this.name = name;
+                            }
+                            public Person(String name , int age){ 
+                             this.(name)  //调用单参构造方法
+                             this.age = age;
+                            }
+
+                在上述代码中当参数达到4个甚至更多时，我们将会存在更多的构造方法（单参，无参，两参，三参，...），在这些构造方法里会存在大量的赋值操作，而我们可以使用 this(); 进行代码的优化;在前期的学习中我们将更加注重如何去消除代码的重复性;
+
+                        eg:（三参 name age sex）
+                            public Person(){
+                              this("无名氏", 18 , "男");
+                            }
+                            public Person(String name){
+                              this(name,18,"男"); 
+                              
+                            }
+                            public Person(String name , int age){ 
+                             this.(name ,age ,"男");  
+                            }
+                            public Person(String name , int age ,String sex){ 
+                             this.(name ,age , sex);   
+                            }
+
+
+                关于this的一个案例：详情请到 java 文件夹中寻找;
+
+
+
+
             
 
 
