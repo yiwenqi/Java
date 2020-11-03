@@ -330,21 +330,7 @@ java面向对象学习--  前提：已有基础
 				    Person.country = "";
 				    Person person = new person();
 
-		static也可以进行方法定义,其的特点是可以直接由 类名称在实例化之前调用;
 
-	    eg:
-		 public static void setCountry(String c){
-			country = c;
-		 }
-		注意: 
-			·static 方法只允许调用 属性或 static方法；
-			·非static方法允许调用 属性或 static方法；
-
-		原因:所有的static定义的方法和属性可以在实例化之前使用，而所有的非static方法和属性必须实例化之后
-		使用。
-
-		static定义的方法和属性不是编写代码之初所需要考虑的，只有在需要回避实例化对象和使用公共属性的情况
-		之下才会考虑使用static定义方法或属性。
             
 
 
