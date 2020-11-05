@@ -532,6 +532,58 @@ java面向对象学习--  前提：已有基础
                     Person per [] = new Person[3]  //此数组中的对象都是null,因为未给其指定堆内存
                     per[0] = new Person("01",02);
                     
+    ·引用传递实际应用
+                
+         ·类关联结构
+         
+             class Car{
+                private Person person;
+             }
+             class  Person{
+                private Car car;
+             }
+         
+         ·自身关联
+            class Person {
+                private Person Children [] ;
+            }
+            public class ArrayDemo{
+                 public static void main(String args[]){
+                    Person person = new Person("王五",18);
+                    Person childA = new Person("child",17);
+                    Person childB = new Person("child",17); 
+                    childA.setCar(new Car ("BMW"))
+                    
+                    person.setChildren(new Person [] {childB,childA,...})
+                    System.out.println(person.getChild().get );
+                  }
+            }
+         ·合成设计模式
+                人类的任何产品都可以进行拆分，而后进行重新组合，所以这样的设计在java中被称为合成设计模式
+                例如电脑:可以拆分为许多部件，而后将这些部件设计为一个个的类，在进行各类组合可以组成一个电脑或电脑中
+                的某个模块
+                
+                
+    ·数据表与简单Java类映射转换
+            ·在java的开发中简单Java类中的属性都与数据库中的数据相映射，由数据库的结构来实现简单java类
+            程序类的定义实际上和这些实体类的差别并不大，所以在实际的开发中数据表与简单Java类的关系如下:
+                    ·数据表实体的设计就等于类的定义
+                    ·表中的字段  = 类的成员属性
+                    ·表的外键关联  = 类的引用关联
+                    ·表中的一行数据 = 类的实例化
+                    ·表的多行数据  = 对象数组
+                    
+            在以后的实际开发项目中一定是分为以下两个步骤实现:
+                    ·第一步: 根据表的结构关系进行对象配置;
+                    ·第二步: 根据要求通过结构获取数据;
+                    
+                    eg:
+                    public
+                    
+    · 一对多的映射关系
+            
+            
+                    
                     
 
 

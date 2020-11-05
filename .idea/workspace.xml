@@ -4,16 +4,6 @@
     <list default="true" id="db7277bf-7127-4ba0-a050-68865237e3a0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/Dept.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/JavaDemo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/JavaDemo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/static关键字/JavaDemo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/static关键字/static关键字.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/this关键字/this关键字.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/引用与垃圾的产生分析/引用与垃圾的产生.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/深入分析类与对象/成员属性的封装.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/深入分析类与对象/构造方法与匿名对象.docx" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="489">
-                <caret line="532" column="48" lean-forward="false" selection-start-line="532" selection-start-column="48" selection-end-line="532" selection-end-column="48" />
+              <first_editor relative-caret-position="651">
+                <caret line="580" column="26" lean-forward="false" selection-start-line="580" selection-start-column="26" selection-end-line="580" selection-end-column="26" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -69,8 +59,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="379" />
-    <option name="y" value="121" />
+    <option name="x" value="484" />
+    <option name="y" value="63" />
     <option name="width" value="1348" />
     <option name="height" value="1028" />
   </component>
@@ -248,11 +238,12 @@
       <workItem from="1604408610157" duration="4559000" />
       <workItem from="1604488222385" duration="6078000" />
       <workItem from="1604501576687" duration="92000" />
+      <workItem from="1604578588678" duration="4606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10729000" />
+    <option name="totallyTimeSpent" value="15335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
@@ -303,6 +294,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
           <first_editor relative-caret-position="14364">
             <caret line="532" column="48" lean-forward="false" selection-start-line="532" selection-start-column="48" selection-end-line="532" selection-end-column="48" />
             <folding />
@@ -327,8 +329,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="489">
-            <caret line="532" column="48" lean-forward="false" selection-start-line="532" selection-start-column="48" selection-end-line="532" selection-end-column="48" />
+          <first_editor relative-caret-position="651">
+            <caret line="580" column="26" lean-forward="false" selection-start-line="580" selection-start-column="26" selection-end-line="580" selection-end-column="26" />
             <folding />
           </first_editor>
           <second_editor />
