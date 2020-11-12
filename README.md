@@ -304,7 +304,10 @@ java面向对象学习--  前提：已有基础
                          对于简单java类而言，其核心的开发结构如下:
                             ·类名一定要有意义，可以明确的描述某一类事务
                             ·类之中的属性都必须使用private进行封装，同时封装后的属性必须有getter setter 方法
-                            ·类之中可以提供无数构造方法，但是必须要保留无参构造方法；
+                            ·类之中可以提供无数构造方法，但是建议必须要保留无参构造方法(原因:
+                                当我们在字类继承父类，字类实例化对象的时候会自动执行super()语句来调用父类的无参构造
+                                而如果父类没有无参构造就必须要用super(String name , int age)明确指定有参构造 
+                                                        )；
                             ·类之中不允许出现任何输出语句，所有内容必须返回;
                             ·【非必须】可以提供一个获取对象详细信息的方法，命名为 getinfo()
                             
@@ -918,6 +921,122 @@ java面向对象学习--  前提：已有基础
                 public static String format​(String format,
                                             Object... args))   //格式化数组
                                             
-                 public static String format​("姓名: %s 、年龄: %d 、成绩: %5.2f、",name ,age,score) 
+                public static String format​("姓名: %s 、年龄: %d 、成绩: %5.2f、",name ,age,score) 
                                                                //姓名: 小王 、年龄: 18 、成绩: 97.58
                                                                
+                ·字符串的其它方法:
+                    public String trim​()             //取出字符串两边的空格
+                    
+                    String 	toLowerCase​()            //将字符串转为小写
+                    
+                    public String toUpperCase​()      //将字符串转为大写                                           
+                     
+                    范例:利用各种方法的组合写一个首字母大写打方法
+                    
+                    class StringUilt{
+                        public static String initcpa(String str){
+                            if(str == null || "".equlas(str)){
+                                return str ;
+                            }
+                            if(str.length() == 1){
+                                str.toLowerCase();
+                            }
+                            return str.substring(0,1).toLowweCase()+str.substring(1) ;
+                        }
+                    }                                      
+                    
+                    
+                    
+                         
+    ·继承的定义与使用
+        ·继承的实现
+            java面向对象的第二大特征就是继承性，继承性的主要特点就在于：可以扩充已有类的功能
+            
+            
+            继承通过 extends 关键字来实现， 通常我们将字类称为派生类 ，将父类称为超类 ；
+            
+            范例:
+                class Person{
+                    String naem ;
+                    int age ;
+                    
+                    //此处省略setter 和 getter 方法
+                }                
+                
+                class Students {}
+                
+                public class JavaDemo{
+                    public static void main(String args[]){
+                        Students stu = new Students();
+                        stu.setName("小明");
+                        stu.setAge(18) ;
+                        
+                        //字类可以调用父类的方法和属性
+                    }
+                }
+            
+    ·字类实例化流程
+            范例:
+                class Person{
+                    public Person(){
+                    System.out.println("【实例化Person对象】");
+                    }
+                }
+                class Student{
+                    public Student(){
+                    System.out.println("【实例化Student对象】");
+                    }
+                }
+                public class JavaDemo{
+                    public static void main(String args[]){
+                        new Student();
+                        //输出结果为:
+                            【实例化Person对象】
+                            【实例化Student对象】
+                    }
+                    
+                分析上述程序可以知道，当实例化Students时会自动使用 supper()  语句  也就是说会自动调用父类无参构造方法
+                也只会默认调用无参构造方法，且super() 方法只能放在 字类构造方法的第一行
+                    super() ;表示的就是子类调用父类的构造方法，所以这里写于不写是一样的 
+                    
+                但是如果父类没有无参构造那么在这里就必须使用 super()明确调用有参构造
+                
+                class Person{
+                    public Person(String name){
+                    System.out.println("【实例化Person对象】");
+                    }
+                }
+                class Student{
+                    public Student(String name ){
+                    super(name);
+                    System.out.println("【实例化Student对象】");
+                    }
+                }
+                public class JavaDemo{
+                    public static void main(String args[]){
+                        new Student();
+                        //输出结果为:
+                            【实例化Person对象】
+                            【实例化Student对象】
+                    }
+                结论: 无论如何，在实例化字类对象的时候一定会实例化父类对象，目的时为所有的属性都可以进行空间分配
+                            super和this都可以进行构造方法的调用，并且都要放在首行， super调用父类  this调用本类
+                            所以super 和 this 不能同时出现
+                            
+            ·继承的相关限制
+                java之中不允许多重继承，只允许多层继承
+                    范例:(错误)
+                        class A{}
+                        class B{}
+                        class C extends A,B{}   //多重继承 
+                        有些语言可以，多重继承的目的是为了继承多个类之中的方法和属性
+                        
+                        (正确)
+                        class A{}
+                        class B extends A{}
+                        class C extends B{} //多层继承
+                        实际开发中不应该超过三层， 但理论是可以的，因为在超过三层后，会出现逻辑不清晰等问题
+                        
+                        
+                子类继承父类实际上可以继承父类的所有操作结构，但对于私有操作属于隐式继承，但对于非私有操作都是显示继承
+                隐式继承无法直接访问，但可以通过public方法间接访问

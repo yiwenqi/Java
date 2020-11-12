@@ -1,0 +1,16 @@
+class Channel {
+	public void connect(){
+		System.out.prinln("【Channel父类】进行资源连接");
+	}
+}
+
+class DatabaseChannel extends Channel {
+	
+
+}
+public class JavaDemo{
+	public static void main (String args []){
+		DatabaseChannel channel = new DatabaseChannel();
+		channel.connect();
+	}
+}
