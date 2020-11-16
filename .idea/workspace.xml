@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db7277bf-7127-4ba0-a050-68865237e3a0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/3.this关键字/Dept.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/3.this关键字/JavaDemo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/3.this关键字/JavaDemo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/3.this关键字/this关键字.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/4.static关键字/JavaDemo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/4.static关键字/static关键字.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/5.简单Java类案例/Person.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/6.数据表与简单Java类的映射/案例/Dept.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/6.数据表与简单Java类的映射/案例/Emp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/6.数据表与简单Java类的映射/案例/JavaDemo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/6.数据表与简单Java类的映射/案例/JavaDemo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/6.数据表与简单Java类的映射/案例/JavaDemo2.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/6.数据表与简单Java类的映射/案例/复杂多对多映射.docx" afterPath="" />
-    </list>
+    <list default="true" id="db7277bf-7127-4ba0-a050-68865237e3a0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +15,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="837">
-                <caret line="946" column="20" lean-forward="true" selection-start-line="589" selection-start-column="4" selection-end-line="946" selection-end-column="20" />
+              <first_editor relative-caret-position="192">
+                <caret line="977" column="4" lean-forward="false" selection-start-line="977" selection-start-column="4" selection-end-line="1041" selection-end-column="44" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -262,16 +246,15 @@
       <workItem from="1605097234310" duration="638000" />
       <workItem from="1605257550253" duration="806000" />
       <workItem from="1605261457290" duration="256000" />
-      <workItem from="1605262842278" duration="2704000" />
+      <workItem from="1605262842278" duration="3907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45066000" />
+    <option name="totallyTimeSpent" value="46269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -484,8 +467,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="837">
-            <caret line="946" column="20" lean-forward="true" selection-start-line="589" selection-start-column="4" selection-end-line="946" selection-end-column="20" />
+          <first_editor relative-caret-position="192">
+            <caret line="977" column="4" lean-forward="false" selection-start-line="977" selection-start-column="4" selection-end-line="1041" selection-end-column="44" />
             <folding />
           </first_editor>
           <second_editor />
