@@ -17,11 +17,10 @@ class SupperMan extends Person{
 public class JavaDemo3{
 	public static void main(String[] args) {
 		Person per = new SupperMan();
-		System.out.println(per instanceof Person);
-		if (per instanceof Person) {
-			SupperMan sup = (SupperMan)per;
-			sup.fly();
-			sup.fir();
-		}
+		System.out.println("我是person类：我可以喷火");
+		per.println();
+		SupperMan sup = (SupperMan)per;
+		sup.fly();
+		sup.fir();
 	}
 }
